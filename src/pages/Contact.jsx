@@ -42,17 +42,17 @@ const Contact = () => {
           <VStack>
             <Icon as={FaPhone} boxSize={8} />
             <Text>Call Us</Text>
-            <Text fontWeight="bold">(123) 456-7890</Text>
+            <Text fontWeight="bold">717-414-7198</Text>
           </VStack>
           <VStack>
             <Icon as={FaEnvelope} boxSize={8} />
             <Text>Email Us</Text>
-            <Text fontWeight="bold">info@quickreleasebikes.com</Text>
+            <Text fontWeight="bold">josh@qrbicycles.com</Text>
           </VStack>
           <VStack>
             <Icon as={FaMapMarkerAlt} boxSize={8} />
             <Text>Visit Us</Text>
-            <Text fontWeight="bold">123 Bike Lane, Your City</Text>
+            <Text fontWeight="bold">242 Falling Spring Road<br></br> Chambersburg, PA </Text>
           </VStack>
         </HStack>
       </Container>
