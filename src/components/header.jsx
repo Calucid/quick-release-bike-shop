@@ -4,18 +4,17 @@ import { Link as RouterLink } from "react-router-dom";
 import { useRef, useState } from "react";
 
 // Color Variables
-const HEADER_BG_COLOR = "gray.800";
+const HEADER_BG_COLOR = "black";
 const HEADER_TEXT_COLOR = "white";
-const LINK_HOVER_COLOR = "gray";
+const LINK_HOVER_COLOR = "white";
 
 // Website Name
-const LogoName = "Calucid Template";
+const LogoName = "Quick Release Bike Shop";
 
 // Page Links Configuration
 const PAGES = [
   { name: "Home", path: "/" },
-  { name: "Menu", path: "/menu" },
-  {name: "Visit Us", path: "/visit"},
+  { name: "Visit Us", path: "/visit" },
   {name: "About", path: "/about"},
   { name: "Contact", path: "/contact" },
 ];

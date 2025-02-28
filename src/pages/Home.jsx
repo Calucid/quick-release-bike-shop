@@ -1,143 +1,129 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Image, Stack, Text, VStack, HStack, Icon, Divider } from "@chakra-ui/react";
+import { FaBicycle, FaPhone, FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <Box>
+    <Box bg="blue.900" color="white">
       {/* Hero Section */}
-      <Box
-        bgImage="url('http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/bike-shop-exterior')"
-        bgSize="cover"
-        bgPosition="center"
-        h="100vh"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <VStack spacing={6} textAlign="center" bg="rgba(0, 0, 0, 0.6)" p={8} borderRadius="md">
-          <Heading color="white" size="2xl">
-            Quick Release Bike Shop
-          </Heading>
-          <Text color="white" fontSize="xl">
-            Your one-stop shop for premium bikes, accessories, and repairs.
-          </Text>
-          <Button as={Link} to="/shop" colorScheme="yellow" size="lg">
-            Shop Now
-          </Button>
-        </VStack>
-      </Box>
-
-      {/* About Section */}
-      <Container maxW="container.xl" py={16}>
-        <Flex direction={{ base: "column", md: "row" }} align="center">
-          <Image
-            src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/bike-repair"
-            alt="Bike Repair"
-            borderRadius="md"
-            boxSize="400px"
-            objectFit="cover"
-            mr={{ md: 8 }}
-          />
-          <VStack align="start" spacing={4}>
-            <Heading size="xl">About Us</Heading>
-            <Text fontSize="lg">
-              At Quick Release Bike Shop, we provide top-quality bikes, expert repairs, and a wide
-              range of accessories to keep you riding smoothly. Whether you're a casual rider or a
-              professional cyclist, we have everything you need.
+      <Box bg="blue.800" py={16} textAlign="center">
+        <Container maxW="container.lg">
+          <VStack spacing={6}>
+            <Heading size="2xl">Quick Release Bicycle Shop</Heading>
+            <Text fontSize="lg" maxW="600px">
+              Your trusted local bike shop for repairs, maintenance, and expert advice. Ride with confidence.
             </Text>
-            <Button as={Link} to="/about" colorScheme="yellow">
-              Learn More
+            <Button colorScheme="teal" size="lg" as={Link} to="/contact">
+              Get in Touch
             </Button>
           </VStack>
-        </Flex>
-      </Container>
-
-      {/* Featured Products */}
-      <Box bg="gray.100" py={16}>
-        <Container maxW="container.xl">
-          <Heading textAlign="center" mb={8}>
-            Featured Products
-          </Heading>
-          <Flex wrap="wrap" justify="center" gap={8}>
-            <VStack bg="white" p={4} borderRadius="md" boxShadow="md">
-              <Image
-                src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/mountain-bike"
-                alt="Mountain Bike"
-                boxSize="250px"
-                objectFit="cover"
-              />
-              <Text fontSize="lg" fontWeight="bold">
-                Mountain Bike
-              </Text>
-              <Button as={Link} to="/shop" colorScheme="yellow">
-                Shop Now
-              </Button>
-            </VStack>
-            <VStack bg="white" p={4} borderRadius="md" boxShadow="md">
-              <Image
-                src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/road-bike"
-                alt="Road Bike"
-                boxSize="250px"
-                objectFit="cover"
-              />
-              <Text fontSize="lg" fontWeight="bold">
-                Road Bike
-              </Text>
-              <Button as={Link} to="/shop" colorScheme="yellow">
-                Shop Now
-              </Button>
-            </VStack>
-            <VStack bg="white" p={4} borderRadius="md" boxShadow="md">
-              <Image
-                src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/bike-helmet"
-                alt="Bike Helmet"
-                boxSize="250px"
-                objectFit="cover"
-              />
-              <Text fontSize="lg" fontWeight="bold">
-                Bike Helmet
-              </Text>
-              <Button as={Link} to="/shop" colorScheme="yellow">
-                Shop Now
-              </Button>
-            </VStack>
-          </Flex>
         </Container>
       </Box>
 
-      {/* Contact Section */}
-      <Container maxW="container.xl" py={16}>
-        <Flex direction={{ base: "column", md: "row" }} align="center">
-          <VStack align="start" spacing={4} flex="1">
-            <Heading size="xl">Get in Touch</Heading>
-            <Text fontSize="lg">
-              Have questions? Need a repair? Visit our shop or contact us today!
+      {/* About Us Section */}
+      <Container maxW="container.lg" py={20}>
+        <HStack display={["none", "none", "flex"]} spacing={10} align="center">
+          <Image
+            src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/bike-shop-exterior"
+            alt="Bike shop exterior"
+            borderRadius="lg"
+            boxSize="400px"
+          />
+          <VStack align="start" spacing={4}>
+            <Heading size="xl">About Us</Heading>
+            <Text fontSize="md">
+            Quick Release Bicycle Shop is Chambersburg’s premier dealer for Giant, Rocky Mountain, and Niner bicycles, serving riders of all ages and skill levels. We offer a wide range of Giant bikes for leisure, mountain, cyclocross, and road cycling, along with Niner Bicycles, Saris bike racks, Giant and Louis Garneau apparel, Louis Garneau cycling shoes, and top-tier nutrition from Honey Stinger and Gu Gels. Our expert team also specializes in professional bicycle maintenance and repairs, ensuring your bike stays in top condition. At QRB, we’re dedicated to providing quality products and exceptional service for all your cycling needs.
             </Text>
-            <Button as={Link} to="/contact" colorScheme="yellow">
-              Contact Us
+            <Button colorScheme="teal" as={Link} to="/about">
+              Learn More
             </Button>
           </VStack>
-          <Image
-            src="http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/bike-shop-interior"
-            alt="Bike Shop Interior"
-            borderRadius="md"
-            boxSize="400px"
-            objectFit="cover"
-            ml={{ md: 8 }}
-          />
-        </Flex>
+        </HStack>
       </Container>
+
+      <Divider />
+
+      {/* Services Section */}
+      <Container maxW="container.lg" py={20}>
+        <Heading textAlign="center" mb={10}>Our Services</Heading>
+        <HStack spacing={10} wrap="wrap" justify="center">
+          {[
+            { title: "Bike Repairs", img: "bike-repair", desc: "Expert repair services for all bike types." },
+            { title: "Tune-Ups", img: "bike-tuneup", desc: "Keep your bike in top shape with our tune-ups." },
+            { title: "Custom Builds", img: "custom-bike", desc: "Build your dream bike with our specialists." },
+          ].map((service) => (
+            <VStack key={service.title} spacing={4} maxW="300px" textAlign="center">
+              <Image
+                src={`http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/${service.img}`}
+                alt={service.title}
+                boxSize="250px"
+                borderRadius="lg"
+              />
+              <Heading size="md">{service.title}</Heading>
+              <Text>{service.desc}</Text>
+            </VStack>
+          ))}
+        </HStack>
+      </Container>
+
+      <Divider />
+
+      {/* Testimonials Section */}
+      <Container maxW="container.lg" py={20}>
+        <Heading textAlign="center" mb={10}>What Our Customers Say</Heading>
+        <HStack spacing={10} wrap="wrap" justify="center">
+          {[
+            { name: "John D.", review: "Fantastic service! My bike rides like new.", img: "customer1" },
+            { name: "Sarah W.", review: "The best bike shop in town!", img: "customer2" },
+            { name: "Alex R.", review: "Friendly staff and top-notch repairs.", img: "customer3" },
+          ].map((testimonial) => (
+            <VStack key={testimonial.name} spacing={4} maxW="300px" textAlign="center">
+              <Image
+                src={`http://stock.calucid.com/fetch/calucid/quick-release-bike-shop/${testimonial.img}`}
+                alt={testimonial.name}
+                boxSize="100px"
+                borderRadius="full"
+              />
+              <Heading size="sm">{testimonial.name}</Heading>
+              <Text fontStyle="italic">"{testimonial.review}"</Text>
+              <HStack>
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} as={FaStar} color="yellow.400" />
+                ))}
+              </HStack>
+            </VStack>
+          ))}
+        </HStack>
+      </Container>
+
+      <Divider />
+
+      {/* Contact Section */}
+      <Container maxW="container.lg" py={20} textAlign="center">
+        <Heading mb={4}>Get in Touch</Heading>
+        <Text mb={6}>Have questions? Need repairs? We're here to help!</Text>
+        <HStack justify="center" spacing={10}>
+          <VStack>
+            <Icon as={FaPhone} boxSize={8} />
+            <Text>Call Us</Text>
+            <Text fontWeight="bold">717-414-7198</Text>
+          </VStack>
+          <VStack>
+            <Icon as={FaMapMarkerAlt} boxSize={8} />
+            <Text>Visit Us</Text>
+            <Text fontWeight="bold">242 Falling Spring Road
+              <br></br>
+              Chambersburg, PA 17202</Text>
+          </VStack>
+        </HStack>
+        <Button colorScheme="teal" size="lg" as={Link} to="/visit" mt={6}>
+          Visit Us
+        </Button>
+      </Container>
+
+      {/* Footer */}
+
     </Box>
   );
 };

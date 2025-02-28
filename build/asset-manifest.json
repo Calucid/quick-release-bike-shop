@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.67aadb38.js",
-    "index.html": "/index.html",
-    "main.67aadb38.js.map": "/static/js/main.67aadb38.js.map"
+    "main.js": "/quick-release-bike-shop/static/js/main.b1eb8e10.js",
+    "index.html": "/quick-release-bike-shop/index.html",
+    "main.b1eb8e10.js.map": "/quick-release-bike-shop/static/js/main.b1eb8e10.js.map"
   },
   "entrypoints": [
-    "static/js/main.67aadb38.js"
+    "static/js/main.b1eb8e10.js"
   ]
 }
